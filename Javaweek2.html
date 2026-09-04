@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // الأسبوع الثاني في جافاسكريبت
+      // العمليات الحسابية الأساسية
+
+      console.log(10 + 5); // جمع: 15
+      console.log(10 - 5); // طرح: 5
+      console.log(10 * 5); // ضرب: 50
+      console.log(10 / 5); // قسمة: 2
+      console.log(10 % 3); // باقي القسمة: 1
+
+      console.log("________________________");
+      console.log("________________________");
+
+      // مثال 1: نفس العمليات باستخدام متغيرات
+      let a = 10;
+      let b = 5;
+
+      console.log(a + b); // جمع: 15
+      console.log(a - b); // طرح: 5
+      console.log(a * b); // ضرب: 50
+      console.log(a / b); // قسمة: 2
+      console.log(a % 3); // باقي القسمة: 1
+
+      // أولوية العمليات
+      console.log(10 + 2 * 3); // 10 + (2 * 3): 16
+      console.log((10 + 2) * 3); // (10 + 2) * 3: 36
+
+      console.log("________________________");
+      // مثال 2: تحويل النص لرقم
+      console.log("5" + "4"); // دمج نصوص: "54"
+      console.log(+"5" + +"4"); // تحويل لرقم ثم جمع: 9
+
+      console.log("________________________");
+      console.log("________________________");
+
+      console.log(typeof "5"); // "string"
+      console.log(typeof +"5"); // "number"
+
+      console.log(+true); // 1
+      console.log(+false); // 0
+
+      // مثال 3: طرق تحويل تانية
+      console.log(Number("5") + Number("4")); // 9
+
+      // لو النص فيه حروف مع الرقم
+      console.log(Number("5 abdo")); // NaN
+      console.log(parseInt("5 abdo")); // 5
+      console.log(parseFloat("5.5 abdo")); // 5.5
+
+      console.log("________________________");
+      console.log("________________________");
+      console.log("________________________");
+
+      // Object Number (خصائص مهمّة)
+      console.log(Number.MAX_VALUE); // 1.7976931348623157e+308
+      console.log(Number.MIN_VALUE); // 5e-324
+      console.log(Number.MAX_SAFE_INTEGER); // 9007199254740991
+      console.log(Number.MIN_SAFE_INTEGER); // -9007199254740991
+
+      console.log("________________________");
+
+      // هل عدد صحيح؟
+      console.log(Number.isInteger(5)); // true
+      console.log(Number.isInteger(5.5)); // false
+
+      // هل القيمة NaN؟
+      console.log(Number.isNaN(5)); // false
+      console.log(Number.isNaN(NaN)); // true
+
+      console.log("________________________");
+      console.log("________________________");
+      console.log("________________________");
+
+      // كائن Math: ثوابت ودوال رياضية جاهزة
+
+      console.log(Math.PI); // قيمة باي: 3.141592653589793
+      console.log(Math.E); // عدد e: 2.718281828459045
+
+      console.log(Math.abs(-5)); // القيمة المطلقة: 5
+
+      console.log(Math.sqrt(25)); // الجذر التربيعي: 5
+
+      console.log(Math.pow(5, 2)); // 5 أس 2: 25
+
+      console.log(Math.round(5.5)); // تقريب للأقرب: 6
+
+      console.log(Math.round(5.1)); // تقريب للأقرب: 5
+
+      console.log(Math.ceil(5.1)); // تقريب لفوق: 6
+
+      console.log(Math.floor(5.9)); // تقريب لتحت: 5
+
+      console.log(Math.min(5, 10, 15)); // أصغر قيمة: 5
+      console.log(Math.max(5, 10, 15)); // أكبر قيمة: 15
+
+      console.log("________________________");
+      console.log("________________________");
+      console.log("________________________");
+      
+      //   practice 1
+      let zakah = window.prompt("اكتب مبلغ الزكاة");
+      zakah = Number(zakah);
+      console.log("قيمة الزكاة: " + zakah * 0.025 + " جنيه");
+    </script>
+  </body>
+</html>
